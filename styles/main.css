@@ -1,3 +1,10 @@
+html {
+  background-image: url("../images/owl.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
 body {
   margin: 0;
   text-align: center;
