@@ -171,3 +171,12 @@ a:link {
 a:hover {
   color: #446288;               /* slightly lighter than #2d4059 */
 }
+
+@media (max-width: 1028px) {
+  #profile-picture {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
