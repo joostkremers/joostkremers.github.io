@@ -1,3 +1,5 @@
+/* General HTML tags */
+
 html {
   background-image: url("../images/owl.png");
   background-repeat: no-repeat;
@@ -21,10 +23,6 @@ h2 {
   font-weight: normal;
 }
 
-h3 {
-  color: #2d4059;
-}
-
 h1,
 h2,
 h3 {
@@ -44,18 +42,44 @@ hr {
   margin: 100px auto;
 }
 
-#top-box {
+/* unvisited link */
+a:link {
+  text-decoration: none;
+  color: #143c71;               /* slightly more saturated than #2d4059 */
+}
+
+/* mouse over link */
+a:hover {
+  color: #446288;               /* slightly lighter than #2d4059 */
+}
+
+/* Title box */
+
+#title-box {
   position: relative;
   padding-top: 100px;
 }
 
-#middle-box {
+/* Profile box */
+
+#profile-box {
   margin-top: 20px;
 }
 
-.underline {
-  text-decoration: underline;
+.profile {
+  width: 40%;
+  margin: 50px auto 200px auto;
+  text-align: left;
 }
+
+#profile-picture {
+  border-radius: 50%;
+  width: 20%;
+  float: left;
+  margin-right: 30px;
+}
+
+/* Skills */
 
 .skill-row {
   width: 40%;
@@ -79,26 +103,7 @@ hr {
   margin-left: 30px;
 }
 
-.sans {
-  font-family: 'Merriweather Sans', sans-serif;
-}
-
-.larger {
-  font-size: 1.5em;
-}
-
-.profile {
-  width: 40%;
-  margin: 50px auto 200px auto;
-  text-align: left;
-}
-
-#profile-picture {
-  border-radius: 50%;
-  width: 20%;
-  float: left;
-  margin-right: 30px;
-}
+/* Contax box */
 
 .contact-button {
   background: #ea5455;
@@ -137,6 +142,8 @@ hr {
   text-decoration: none;
 }
 
+/* Bottom box */
+
 #bottom-box {
   margin-top: 50px;
   padding-top: 50px;
@@ -148,17 +155,6 @@ hr {
   font-family: 'Merriweather Sans', sans-serif;
   margin: auto 50px auto 50px;
   font-size: 1.5rem;
-}
-
-/* unvisited link */
-a:link {
-  text-decoration: none;
-  color: #143c71;               /* slightly more saturated than #2d4059 */
-}
-
-/* mouse over link */
-a:hover {
-  color: #446288;               /* slightly lighter than #2d4059 */
 }
 
 @media (max-width: 1028px) {
