@@ -162,10 +162,19 @@ a:hover {
 }
 
 @media (max-width: 1028px) {
+  .profile {
+    width: 80%;
+    text-align: center;
+  }
+
   #profile-picture {
+    width: 50%;
     float: none;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 30px auto;
+  }
+
+  .skill-row {
+    width: 80%;
   }
 }
