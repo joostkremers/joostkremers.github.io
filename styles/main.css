@@ -49,17 +49,6 @@ hr {
   padding-top: 100px;
 }
 
-#top-cloud {
-  position: absolute;
-  right: 30%;
-  top: 50px;
-}
-
-#bottom-cloud {
-  position: absolute;
-  left: 25%;
-}
-
 #middle-box {
   margin-top: 20px;
 }
