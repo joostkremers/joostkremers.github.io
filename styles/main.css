@@ -105,41 +105,10 @@ a:hover {
 
 /* Contax box */
 
-.contact-button {
-  background: #ea5455;
-  background-image: -moz-linear-gradient(top, #ea5455, #e77);
-  background-image: -webkit-linear-gradient(top, #ea5455, #e77);
-  background-image: -ms-linear-gradient(top, #ea5455, #e77);
-  background-image: -o-linear-gradient(top, #ea5455, #e77);
-  background-image: -webkit-gradient(top, #ea5455, #e77);
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  color: #fff;
+.contact-link {
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  padding: 10px 15px;
-  text-shadow: 1px 1px 20px #000;
-  border: solid #fff 1px;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  text-align: center;
-}
-
-.contact-button:hover {
-  border: solid #fff 1px;
-  background: #e77;
-  background-image: -moz-linear-gradient(top, #e77, #ea5455);
-  background-image: -webkit-linear-gradient(top, #e77, #ea5455);
-  background-image: -ms-linear-gradient(top, #e77, #ea5455);
-  background-image: -o-linear-gradient(top, #e77, #ea5455);
-  background-image: -webkit-gradient(top, #e77, #ea5455);
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  text-decoration: none;
+  margin: auto 50px auto 50px;
+  font-size: 1.5rem;
 }
 
 /* Bottom box */
@@ -149,12 +118,6 @@ a:hover {
   padding-top: 50px;
   background-color: #ea5455;
   font-size: 0.8rem;
-}
-
-.footer-link {
-  font-family: 'Merriweather Sans', sans-serif;
-  margin: auto 50px auto 50px;
-  font-size: 1.5rem;
 }
 
 @media (max-width: 1028px) {
