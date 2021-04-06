@@ -13,209 +13,210 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
-    <body>
+  </head>
+  <body>
 
-      <div class="topnav" id="top-menu">
-        <a href="index.html" class="active">Home</a>
-        <a href="linguistics.html">Linguistics</a>
-        <a href="open_source.html">Open source</a>
-        <a href="#contact-box">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-          <i class="fa fa-bars"></i>
-        </a>
+    <div class="topnav" id="top-menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="linguistics.html">Linguistics</a>
+      <a href="open_source.html">Open source</a>
+      <a href="#contact-box">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div id="title-box">
+      <h1>Open source projects</h1>
+    </div>
+
+    <hr/>
+
+    <div class="items">
+      <h2>Applications &amp; libraries</h2>
+      <div class="item">
+        <div class="left-div">
+          <a href="https://joostkremers.github.io/ebib/">
+            <img src="images/GitHub-Mark-32px.png" alt="github icon"><br/>
+            Github
+          </a>
+        </div>
+
+        <h3>Ebib</h3>
+        <p><a href="https://joostkremers.github.io/ebib/">Ebib</a> is a
+          program for managing bibliographic references as used in scientific
+          publications. It reads and writes files in <code>.bib</code>
+          format (originally developed for LaTeX but nowadays also usable with
+          other text formats such as Markdown).</p>
+
+        <p>Ebib runs inside Emacs, so it integrates well with it, e.g., for
+          inserting references into your text, looking up citations, creating
+          notes for bibliographic entries or even viewing PDF files.</p>
+
+        <p>Note that in this context it helps to think of Emacs not as an
+          editor but as a virtual machine, similar to the JVM or the Python
+          VM, but running Lisp code: Ebib's scope is broader than that of an
+          editor plugin; it is best thought of as an application in its own
+          right, running on the Emacs VM.</p>
       </div>
 
-      <div id="title-box">
-        <h1>Open source projects</h1>
+      <div class="item">
+        <div class="left-div">
+          <a href="https://github.com/joostkremers/parsebib/">
+            <img src="images/GitHub-Mark-32px.png" alt="github icon"><br/>
+            Github
+          </a>
+        </div>
+
+        <h3>Parsebib</h3>
+        <p><a href="https://github.com/joostkremers/parsebib/">Parsebib</a> is a
+          library for parsing bibliography files in <code>.bib</code> format,
+          written in Emacs Lisp. It offers a high-level API that can parse an
+          entire <code>.bib</code> file in one go, and a low-level API that returns the
+          data in the <code>.bib</code> file piecemeal, allowing the calling
+          program to fine-tune the way it stores the data.</p>
+
+        <p>Parsebib is used by Ebib, but also by essentially all other
+          <code>.bib</code>-based citation management plugins available for
+          Emacs, given that they all depend on the
+          <a href="https://melpa.org/#/bibtex-completion">bibtex-completions</a> library,
+          which in turn depends on parsebib.</p>
       </div>
 
-      <hr/>
-
-      <div class="items">
-        <h2>Applications &amp; libraries</h2>
-        <div class="item">
-          <div class="left-div">
-            <a href="https://joostkremers.github.io/ebib/">
-              <img src="images/GitHub-Mark-32px.png" alt="github icon"><br/>
-              Github
-            </a>
-          </div>
-
-          <h3>Ebib</h3>
-          <p><a href="https://joostkremers.github.io/ebib/">Ebib</a> is a
-            program for managing bibliographic references as used in scientific
-            publications. It reads and writes files in <code>.bib</code>
-            format (originally developed for LaTeX but nowadays also usable with
-            other text formats such as Markdown).</p>
-
-          <p>Ebib runs inside Emacs, so it integrates well with it, e.g., for
-            inserting references into your text, looking up citations, creating
-            notes for bibliographic entries or even viewing PDF files.</p>
-
-          <p>Note that in this context it helps to think of Emacs not as an
-            editor but as a virtual machine, similar to the JVM or the Python
-            VM, but running Lisp code: Ebib's scope is broader than that of an
-            editor plugin; it is best thought of as an application in its own
-            right, running on the Emacs VM.</p>
+      <div class="item">
+        <div class="left-div">
+          <a href="https://github.com/joostkremers/pymal/">
+            <img src="images/GitHub-Mark-32px.png" alt="github icon"><br/>
+            Github
+          </a>
         </div>
 
-        <div class="item">
-          <div class="left-div">
-            <a href="https://github.com/joostkremers/parsebib/">
-              <img src="images/GitHub-Mark-32px.png" alt="github icon"><br/>
-              Github
-            </a>
-          </div>
-
-          <h3>Parsebib</h3>
-          <p><a href="https://github.com/joostkremers/parsebib/">Parsebib</a> is a
-            library for parsing bibliography files in <code>.bib</code> format,
-            written in Emacs Lisp. It offers a high-level API that can parse an
-            entire <code>.bib</code> file in one go, and a low-level API that returns the
-            data in the <code>.bib</code> file piecemeal, allowing the calling
-            program to fine-tune the way it stores the data.</p>
-
-          <p>Parsebib is used by Ebib, but also by essentially all other
-            <code>.bib</code>-based citation management plugins available for
-            Emacs, given that they all depend on the
-            <a href="https://melpa.org/#/bibtex-completion">bibtex-completions</a> library,
-            which in turn depends on parsebib.</p>
-        </div>
-
-        <div class="item">
-          <div class="left-div">
-            <a href="https://github.com/joostkremers/pymal/">
-              <img src="images/GitHub-Mark-32px.png" alt="github icon"><br/>
-              Github
-            </a>
-          </div>
-
-          <h3>Pymal</h3>
-          <p><a href="https://github.com/joostkremers/pymal/">Pymal</a> is an
-            interpreter for a Lisp-like language written in Python. The design of
-            the interpreter is based on the <a href="https://github.com/kanaka/mal/blob/master/process/guide.md">Make a Lisp</a> guide,
-            the implementation is my own. I wrote Pymal primarily as a way to
-            learn Python.</p>
-        </div>
-
-        <div class="item">
-          <div class="left-div">
-            <a href="https://github.com/joostkremers/sls/">
-              <img src="images/GitHub-Mark-32px.png" alt="github icon"><br/>
-              Github
-            </a>
-          </div>
-
-          <h3>SLS</h3>
-          <p><a href="https://github.com/joostkremers/sls/">SLS</a> is intended
-            to be a simple image viewer in Python. I would like to explore a
-            different way of displaying a directory tree of image files that
-            does not make use of a sidebar with the directory tree but still
-            allows the user to keep track of the directory structure.</p>
-
-          <p>Currently, the project is still in its infancy, so stay tuned.</p>
-        </div>
-
+        <h3>Pymal</h3>
+        <p><a href="https://github.com/joostkremers/pymal/">Pymal</a> is an
+          interpreter for a Lisp-like language written in Python. The design of
+          the interpreter is based on the <a href="https://github.com/kanaka/mal/blob/master/process/guide.md">Make a Lisp</a> guide,
+          the implementation is my own. I wrote Pymal primarily as a way to
+          learn Python.</p>
       </div>
 
-      <hr/>
-
-      <div class="skills">
-        <h2>Emacs plugins</h2>
-        <div class="item">
-          <div class="left-div">
-            <a href="https://github.com/joostkremers/writeroom-mode/">
-              <img src="images/GitHub-Mark-32px.png" alt="github icon"><br/>
-              Github
-            </a>
-          </div>
-
-          <h3>Writeroom-mode</h3>
-          <p><a href="https://github.com/joostkremers/writeroom-mode/">Writeroom-mode</a> is
-            a plugin that turns Emacs into a distraction-free writing
-            environment: It makes Emacs full-screen, removes the status line
-            ("modeline", in Emacs parlance) and centres the text.</p>
+      <div class="item">
+        <div class="left-div">
+          <a href="https://github.com/joostkremers/sls/">
+            <img src="images/GitHub-Mark-32px.png" alt="github icon"><br/>
+            Github
+          </a>
         </div>
 
-        <div class="item">
-          <div class="left-div">
-            <a href="https://joostkremers.github.io/pandoc-mode/">
-              <img src="images/GitHub-Mark-32px.png" alt="github icon"><br/>
-              Github
-            </a>
-          </div>
+        <h3>SLS</h3>
+        <p><a href="https://github.com/joostkremers/sls/">SLS</a> is intended
+          to be a simple image viewer in Python. I would like to explore a
+          different way of displaying a directory tree of image files that
+          does not make use of a sidebar with the directory tree but still
+          allows the user to keep track of the directory structure.</p>
 
-          <h3>Pandoc-mode</h3>
-          <p><a href="https://joostkremers.github.io/pandoc-mode/">Pandoc-mode</a> is
-            a plugin that allows Emacs to communicate with <a href="https://pandoc.org">Pandoc</a>,
-            the Swiss army knife of text conversion. With pandoc-mode, a user
-            can set all of Pandoc’s myriad command-line options, create
-            different profiles for different conversion targets and run Pandoc,
-            all from the comfort of Emacs.</p>
-        </div>
-
-        <div class="item">
-          <div class="left-div">
-            <a href="https://github.com/joostkremers/nswbuff/">
-              <img src="images/GitHub-Mark-32px.png" alt="github icon"><br/>
-              Github
-            </a>
-          </div>
-
-          <h3>Nswbuff</h3>
-          <p><a href="https://github.com/joostkremers/nswbuff/">Nswbuf</a> (new
-            switch-buffer, successor to an earlier plugin ‘swbuff’) is a plugin
-            that makes it possible to quickly switch between buffers (files)
-            without making use of a tab bar.</p>
-        </div>
-
-        <div class="item">
-          <div class="left-div">
-            <a href="https://github.com/joostkremers/visual-fill-column/">
-              <img src="images/GitHub-Mark-32px.png" alt="github icon"><br/>
-              Github
-            </a>
-          </div>
-
-          <h3>Visual-fill-column</h3>
-          <p>Being primarily a programmer's editor, Emacs usually does word-wrap
-            using hard newlines. For prose text, Emacs can be configured to use
-            soft line-wrapping, but with the disadvantage that lines are wrapped
-            at the window edge, even if the editor window is very wide.
-            <a href="https://github.com/joostkremers/visual-fill-column/">Visual-fill-column</a>
-            makes it possible to soft-wrap text at a user-defined width,
-            regardless of the window width.</p>
-        </div>
+        <p>Currently, the project is still in its infancy, so stay tuned.</p>
       </div>
 
-      <hr/>
+    </div>
 
-      <div id="contact-box">
+    <hr/>
 
-        <div class="contact-me">
-          <h2>Get In Touch</h2>
-          <p>
-            <a class="contact-link" href="https://github.com/joostkremers/">Github</a>
-            <a class="contact-link" href="mailto:joostkremers@fastmail.fm">E-mail</a>
-            <a class="contact-link" href="https://joostkremers.fastmail.fm/">Website</a>
-          </p>
+    <div class="skills">
+      <h2>Emacs plugins</h2>
+      <div class="item">
+        <div class="left-div">
+          <a href="https://github.com/joostkremers/writeroom-mode/">
+            <img src="images/GitHub-Mark-32px.png" alt="github icon"><br/>
+            Github
+          </a>
         </div>
+
+        <h3>Writeroom-mode</h3>
+        <p><a href="https://github.com/joostkremers/writeroom-mode/">Writeroom-mode</a> is
+          a plugin that turns Emacs into a distraction-free writing
+          environment: It makes Emacs full-screen, removes the status line
+          ("modeline", in Emacs parlance) and centres the text.</p>
       </div>
 
-      <div id="bottom-box">
-        <p>© 2021 Joost Kremers.</p>
-        <div>Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a> and <a href="https://dinosoftlabs.com/" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      <div class="item">
+        <div class="left-div">
+          <a href="https://joostkremers.github.io/pandoc-mode/">
+            <img src="images/GitHub-Mark-32px.png" alt="github icon"><br/>
+            Github
+          </a>
+        </div>
+
+        <h3>Pandoc-mode</h3>
+        <p><a href="https://joostkremers.github.io/pandoc-mode/">Pandoc-mode</a> is
+          a plugin that allows Emacs to communicate with <a href="https://pandoc.org">Pandoc</a>,
+          the Swiss army knife of text conversion. With pandoc-mode, a user
+          can set all of Pandoc’s myriad command-line options, create
+          different profiles for different conversion targets and run Pandoc,
+          all from the comfort of Emacs.</p>
       </div>
 
-      <script>
-       function toggleMenu() {
-         var x = document.getElementById("top-menu");
-         if (x.className === "topnav") {
-           x.className += " responsive";
-         } else {
-           x.className = "topnav";
-         }
+      <div class="item">
+        <div class="left-div">
+          <a href="https://github.com/joostkremers/nswbuff/">
+            <img src="images/GitHub-Mark-32px.png" alt="github icon"><br/>
+            Github
+          </a>
+        </div>
+
+        <h3>Nswbuff</h3>
+        <p><a href="https://github.com/joostkremers/nswbuff/">Nswbuf</a> (new
+          switch-buffer, successor to an earlier plugin ‘swbuff’) is a plugin
+          that makes it possible to quickly switch between buffers (files)
+          without making use of a tab bar.</p>
+      </div>
+
+      <div class="item">
+        <div class="left-div">
+          <a href="https://github.com/joostkremers/visual-fill-column/">
+            <img src="images/GitHub-Mark-32px.png" alt="github icon"><br/>
+            Github
+          </a>
+        </div>
+
+        <h3>Visual-fill-column</h3>
+        <p>Being primarily a programmer's editor, Emacs usually does word-wrap
+          using hard newlines. For prose text, Emacs can be configured to use
+          soft line-wrapping, but with the disadvantage that lines are wrapped
+          at the window edge, even if the editor window is very wide.
+          <a href="https://github.com/joostkremers/visual-fill-column/">Visual-fill-column</a>
+          makes it possible to soft-wrap text at a user-defined width,
+          regardless of the window width.</p>
+      </div>
+    </div>
+
+    <hr/>
+
+    <div id="contact-box">
+
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <p>
+          <a class="contact-link" href="https://github.com/joostkremers/">Github</a>
+          <a class="contact-link" href="mailto:joostkremers@fastmail.fm">E-mail</a>
+          <a class="contact-link" href="https://joostkremers.fastmail.fm/">Website</a>
+        </p>
+      </div>
+    </div>
+
+    <div id="bottom-box">
+      <p>© 2021 Joost Kremers.</p>
+      <div>Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a> and <a href="https://dinosoftlabs.com/" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
+
+    <script>
+     function toggleMenu() {
+       var x = document.getElementById("top-menu");
+       if (x.className === "topnav") {
+         x.className += " responsive";
+       } else {
+         x.className = "topnav";
        }
-      </script>
-    </body>
+     }
+    </script>
+  </body>
 </html>

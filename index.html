@@ -13,98 +13,99 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
-    <body>
+  </head>
+  <body>
 
-      <div class="topnav" id="top-menu">
-        <a href="index.html" class="active">Home</a>
-        <a href="linguistics.html">Linguistics</a>
-        <a href="open_source.html">Open source</a>
-        <a href="#contact-box">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
+    <div class="topnav" id="top-menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="linguistics.html">Linguistics</a>
+      <a href="open_source.html">Open source</a>
+      <a href="#contact-box">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
 
-      <div id="title-box">
-        <h1>Joost Kremers</h1>
-        <h2>linguist and programmer</h2>
+    <div id="title-box">
+      <h1>Joost Kremers</h1>
+      <h2>linguist and programmer</h2>
+    </div>
+
+    <hr/>
+
+    <div id="profile-box">
+      <div class="profile">
+        <img src="images/profile_picture1.png" alt="Profile picture" id="profile-picture">
+        <p>Hello and welcome to my personal site. Here you can find out about
+          who I am and what I do. And if you wish to contact me, feel free to
+          <a href="#contact-box">drop me a line</a>.</p>
       </div>
 
       <hr/>
 
-      <div id="profile-box">
-        <div class="profile">
-          <img src="images/profile_picture1.png" alt="Profile picture" id="profile-picture">
-          <p>Hello and welcome to my personal site. Here you can find out about
-            who I am and what I do. And if you wish to contact me, feel free to
-            <a href="#contact-box">drop me a line</a>.</p>
+      <div class="items">
+        <h2>My Skills</h2>
+        <div class="item">
+          <img class="left-image" src="images/language.svg" alt="languages icon">
+          <h3>Linguistics</h3>
+          <p>I have been interested in languages and how languages work for as
+            long as I can remember. For most of my career, I have worked as a
+            linguist at various universities in research and teaching.</p>
+          <p>My main research focus is on syntax and theoretical linguistics,
+            and on the connections between syntax, morphology and phonology.
+            Downloadable versions of some of my work can be found
+            <a href="linguistics.html">here</a>.</p>
         </div>
 
-        <hr/>
-
-        <div class="items">
-          <h2>My Skills</h2>
-          <div class="item">
-            <img class="left-image" src="images/language.svg" alt="languages icon">
-            <h3>Linguistics</h3>
-            <p>I have been interested in languages and how languages work for as
-              long as I can remember. For most of my career, I have worked as a
-              linguist at various universities in research and teaching.</p>
-            <p>My main research focus is on syntax and theoretical linguistics,
-              and on the connections between syntax, morphology and phonology.
-              Downloadable versions of some of my work can be found
-              <a href="linguistics.html">here</a>.</p>
-          </div>
-
-          <div class="item">
-            <img class="right-image" src="images/code.svg" alt="code icon">
-            <h3>Coding</h3>
-            <p>I started programming when I was 11, originally on my parents'
-              <a href="https://en.wikipedia.org/wiki/MSX"></a> computer, which
-              had its own BASIC version. Later I tried out the hot programming
-              languages of the time, such as C, Pascal, Prolog and several
-              others that I have forgotten about. I eventually started using the
-              <a href="https://www.gnu.org/software/emacs/">Emacs text editor</a>
-              and learnt Lisp.</p>
-            <p>Although Emacs Lisp is my go-to language at the moment, I still
-              enjoy learing new programming languages and programming
-              techniques. I enjoy writing Clojure and Python, which I'm
-              currently exploring more in-depth, and I'm always looking forward
-              to my next learning project.</p>
-            <p>Some more information about my open-source projects is available
-              <a href="open_source.html">here</a>.</p>
-          </div>
-        </div>
-
-        <hr/>
-
-        <div id="contact-box">
-
-          <div class="contact-me">
-            <h2>Get In Touch</h2>
-            <p>
-              <a class="contact-link" href="https://github.com/joostkremers/">Github</a>
-              <a class="contact-link" href="mailto:joostkremers@fastmail.fm">E-mail</a>
-              <a class="contact-link" href="https://joostkremers.fastmail.fm/">Website</a>
-            </p>
-          </div>
+        <div class="item">
+          <img class="right-image" src="images/code.svg" alt="code icon">
+          <h3>Coding</h3>
+          <p>I started programming when I was 11, originally on my parents'
+            <a href="https://en.wikipedia.org/wiki/MSX"></a> computer, which
+            had its own BASIC version. Later I tried out the hot programming
+            languages of the time, such as C, Pascal, Prolog and several
+            others that I have forgotten about. I eventually started using the
+            <a href="https://www.gnu.org/software/emacs/">Emacs text editor</a>
+            and learnt Lisp.</p>
+          <p>Although Emacs Lisp is my go-to language at the moment, I still
+            enjoy learing new programming languages and programming
+            techniques. I enjoy writing Clojure and Python, which I'm
+            currently exploring more in-depth, and I'm always looking forward
+            to my next learning project.</p>
+          <p>Some more information about my open-source projects is available
+            <a href="open_source.html">here</a>.</p>
         </div>
       </div>
 
-      <div id="bottom-box">
-        <p>© 2021 Joost Kremers.</p>
-        <div>Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a> and <a href="https://dinosoftlabs.com/" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-      </div>
+      <hr/>
 
-      <script>
-       function toggleMenu() {
-         var x = document.getElementById("top-menu");
-         if (x.className === "topnav") {
-           x.className += " responsive";
-         } else {
-           x.className = "topnav";
-         }
+      <div id="contact-box">
+
+        <div class="contact-me">
+          <h2>Get In Touch</h2>
+          <p>
+            <a class="contact-link" href="https://github.com/joostkremers/">Github</a>
+            <a class="contact-link" href="mailto:joostkremers@fastmail.fm">E-mail</a>
+            <a class="contact-link" href="https://joostkremers.fastmail.fm/">Website</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="bottom-box">
+      <p>© 2021 Joost Kremers.</p>
+      <div>Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a> and <a href="https://dinosoftlabs.com/" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
+
+    <script>
+     function toggleMenu() {
+       var x = document.getElementById("top-menu");
+       if (x.className === "topnav") {
+         x.className += " responsive";
+       } else {
+         x.className = "topnav";
        }
-      </script>
-    </body>
+     }
+    </script>
+  </body>
 </html>
