@@ -92,13 +92,24 @@ a:hover {
   line-height: 2;
 }
 
-#language-image {
+.left-image {
   width: 20%;
   float: left;
   margin-right: 30px;
 }
 
-#code-image {
+.left-div {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  padding: 1%;
+  border-radius: 5px;
+  background-color: #decdc3;
+  float: left;
+  margin-right: 30px;
+}
+
+.right-image {
   width: 20%;
   float: right;
   margin-left: 30px;
