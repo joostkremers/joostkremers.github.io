@@ -80,15 +80,15 @@ a:hover {
   margin-right: 30px;
 }
 
-/* Skills */
+/* Items */
 
-.skill-row {
+.item {
   width: 40%;
   margin: 50px auto 100px auto;
   text-align: left;
 }
 
-.skill-row > p {
+.item > p {
   line-height: 2;
 }
 
