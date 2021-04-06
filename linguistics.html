@@ -7,10 +7,24 @@
     <!-- <link href="styles/debug.css" rel="stylesheet"/> -->
     <link href="favicon.ico" rel="icon" type='image/x-icon'/>
 
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto+Slab&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
     <body>
+
+      <div class="topnav" id="top-menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="linguistics.html">Linguistics</a>
+        <a href="open_source.html">Open source</a>
+        <a href="#contact-box">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
       <div id="title-box">
         <h1>Linguistics</h1>
       </div>
@@ -19,16 +33,20 @@
 
       <div class="items">
         <div class="item">
-          <div class="left-div"><img alt="" src="images/document64.png"/><br/>
+          <div class="left-div"><a href="files/Kremers1997.pdf"><img alt="Kremers (1997)" src="images/document64.png"/></a><br/>
           </div>
           <h3>Master's Thesis</h3>
           <h4><i>How Arabs talk to each other about themselves (1997)</i></h4>
           <p>A corpus-based study of the use of the expressions <i>nafs</i> ‘self’ and <i>baʕḍ</i> ‘each
             other’ in Modern Standard Arabic.</p>
+          <p>Note that the Arabic examples in the PDF file are defective:
+            certain characters are consistently missing from the transcription.
+            You will need to be familiar with Arabic in order to reconstruct the
+            original Arabic examples from the glosses.</p>
         </div>
 
         <div class="item">
-          <div class="left-div"><img alt="" src="images/document64.png"/><br/>
+          <div class="left-div"><a href="files/Kremers2003.pdf"><img alt="Kremers (2003)" src="images/document64.png"/></a><br/>
           </div>
           <h3>PhD Thesis</h3>
           <h4><i>The Arabic noun phrase: A minimalist approach (2003)</i></h4>
@@ -37,11 +55,20 @@
         </div>
 
         <div class="item">
-          <div class="left-div"><a href="files/Prosodic_Syntax.pdf"><img alt="" src="images/document64.png"/></a><br/>
+          <div class="left-div"><a href="files/Kremers2017.pdf"><img alt="Kremers (2017)" src="images/document64.png"/></a><br/>
           </div>
           <h3>Postdoctoral Dissertation (Habilitation)</h3>
-          <h4><i>Prosodic Syntax</i></h4>
-          <p>A study of the links between syntax and phonology. By extending the model of Prosodic Morphology (McCarthy & Prince 1995) to syntax, </p>
+          <h4><i>Prosodic Syntax (2017)</i></h4>
+          <p>A study of the links between syntax and phonology. By extending the
+            model of Prosodic Morphology (McCarthy & Prince 1995) to syntax, it
+            becomes possible to describe the interaction between syntax and
+            phonology in an interesting new way. Morphology, in this model, is
+            merely that part of syntax that directly interacts with concrete
+            segmental phonological forms, while “syntax” interacts with
+            phonology more indirectly.</p>
+          <p>This dissertation also argues, contrary to what is sometimes
+            assumed in theoretical syntax, that connectionist models <i>can</i> and <i>should</i> inform
+            theoretical models of language. </p>
         </div>
 
       </div>
@@ -62,7 +89,18 @@
 
       <div id="bottom-box">
         <p>© 2021 Joost Kremers.</p>
-        <div>Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a>, <a href="https://dinosoftlabs.com/" title="DinosoftLabs">DinosoftLabs</a> and <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>, <a href="https://smashicons.com/" title="Smashicons">Smashicons</a>, <a href="https://dinosoftlabs.com/" title="DinosoftLabs">DinosoftLabs</a> and <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
       </div>
+
+      <script>
+       function toggleMenu() {
+         var x = document.getElementById("top-menu");
+         if (x.className === "topnav") {
+           x.className += " responsive";
+         } else {
+           x.className = "topnav";
+         }
+       }
+      </script>
     </body>
 </html>

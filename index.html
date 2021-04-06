@@ -6,9 +6,25 @@
     <link href="styles/main.css" rel="stylesheet"/>
     <!-- <link href="styles/debug.css" rel="stylesheet"/> -->
     <link href="favicon.ico" rel="icon" type='image/x-icon'/>
+
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto+Slab&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
     <body>
+
+      <div class="topnav" id="top-menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="linguistics.html">Linguistics</a>
+        <a href="open_source.html">Open source</a>
+        <a href="#contact-box">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
       <div id="title-box">
         <h1>Joost Kremers</h1>
         <h2>linguist and programmer</h2>
@@ -79,5 +95,16 @@
         <p>© 2021 Joost Kremers.</p>
         <div>Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a> and <a href="https://dinosoftlabs.com/" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
       </div>
+
+      <script>
+       function toggleMenu() {
+         var x = document.getElementById("top-menu");
+         if (x.className === "topnav") {
+           x.className += " responsive";
+         } else {
+           x.className = "topnav";
+         }
+       }
+      </script>
     </body>
 </html>

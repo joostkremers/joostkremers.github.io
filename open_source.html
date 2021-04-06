@@ -6,9 +6,25 @@
     <link href="styles/main.css" rel="stylesheet"/>
     <!-- <link href="styles/debug.css" rel="stylesheet"/> -->
     <link href="favicon.ico" rel="icon" type='image/x-icon'/>
+
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
     <body>
+
+      <div class="topnav" id="top-menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="linguistics.html">Linguistics</a>
+        <a href="open_source.html">Open source</a>
+        <a href="#contact-box">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
       <div id="title-box">
         <h1>Open source projects</h1>
       </div>
@@ -39,7 +55,7 @@
           <p>Note that in this context it helps to think of Emacs not as an
             editor but as a virtual machine, similar to the JVM or the Python
             VM, but running Lisp code: Ebib's scope is broader than that of an
-            editor plugin; it should be thought of as an application in its own
+            editor plugin; it is best thought of as an application in its own
             right, running on the Emacs VM.</p>
         </div>
 
@@ -61,7 +77,8 @@
 
           <p>Parsebib is used by Ebib, but also by essentially all other
             <code>.bib</code>-based citation management plugins available for
-            Emacs, given that they depend on the <a href="https://melpa.org/#/bibtex-completion">bibtex-completions</a> library,
+            Emacs, given that they all depend on the
+            <a href="https://melpa.org/#/bibtex-completion">bibtex-completions</a> library,
             which in turn depends on parsebib.</p>
         </div>
 
@@ -76,8 +93,9 @@
           <h3>Pymal</h3>
           <p><a href="https://github.com/joostkremers/pymal/">Pymal</a> is an
             interpreter for a Lisp-like language written in Python. The design of
-            the interpreter is based on the <a href="https://github.com/kanaka/mal/blob/master/process/guide.md">Make a Lisp</a> guide.
-            I wrote Pymal primarily as a way to learn Python.</p>
+            the interpreter is based on the <a href="https://github.com/kanaka/mal/blob/master/process/guide.md">Make a Lisp</a> guide,
+            the implementation is my own. I wrote Pymal primarily as a way to
+            learn Python.</p>
         </div>
 
         <div class="item">
@@ -147,8 +165,8 @@
           <h3>Nswbuff</h3>
           <p><a href="https://github.com/joostkremers/nswbuff/">Nswbuf</a> (new
             switch-buffer, successor to an earlier plugin ‘swbuff’) is a plugin
-            that allows switching between buffers (files) without making use of a
-            tab bar.</p>
+            that makes it possible to quickly switch between buffers (files)
+            without making use of a tab bar.</p>
         </div>
 
         <div class="item">
@@ -188,5 +206,16 @@
         <p>© 2021 Joost Kremers.</p>
         <div>Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a> and <a href="https://dinosoftlabs.com/" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
       </div>
+
+      <script>
+       function toggleMenu() {
+         var x = document.getElementById("top-menu");
+         if (x.className === "topnav") {
+           x.className += " responsive";
+         } else {
+           x.className = "topnav";
+         }
+       }
+      </script>
     </body>
 </html>
