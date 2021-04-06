@@ -43,14 +43,15 @@ hr {
 }
 
 /* unvisited link */
-a:link {
+a:link,
+a:visited {
   text-decoration: none;
-  color: #143c71;               /* slightly more saturated than #2d4059 */
+  color: #446288;               /* slightly lighter than #2d4059 */
 }
 
 /* mouse over link */
 a:hover {
-  color: #446288;               /* slightly lighter than #2d4059 */
+  color: #143c71;               /* slightly more saturated than #2d4059 */
 }
 
 /* Title box */
