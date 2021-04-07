@@ -54,6 +54,10 @@ a:hover {
   color: #143c71;               /* slightly more saturated than #2d4059 */
 }
 
+p {
+  line-height: 2;
+}
+
 /* Top navigation menu */
 
 .topnav {
@@ -122,10 +126,6 @@ a:hover {
   width: 40%;
   margin: 50px auto 100px auto;
   text-align: left;
-}
-
-.item > p {
-  line-height: 2;
 }
 
 .left-image {
