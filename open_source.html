@@ -8,23 +8,24 @@
     <link href="favicon.ico" rel="icon" type='image/x-icon'/>
 
     <!-- Fontawsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="https://kit.fontawesome.com/76921bf91a.js" crossorigin="anonymous"></script>
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
   </head>
   <body>
-
-    <div class="topnav" id="top-menu">
-      <a href="index.html" class="active">Home</a>
-      <a href="linguistics.html">Linguistics</a>
-      <a href="open_source.html">Open source</a>
-      <a href="#contact-box">Contact</a>
-      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
+    
+    <nav class="topnav">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle"><span class="fa fa-bars"></span><span class="fas fa-times"></span></label>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="linguistics.html">Linguistics</a></li>
+        <li><a href="open_source.html">Open source</a></li>
+        <li><a href="#contact-box">Contact</a></li>
+      </ul>
+    </nav>
 
     <div id="title-box">
       <h1>Open source projects</h1>
