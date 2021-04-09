@@ -42,14 +42,12 @@ hr {
   margin: 100px auto;
 }
 
-/* unvisited link */
 a:link,
 a:visited {
   text-decoration: none;
   color: #446288;               /* slightly lighter than #2d4059 */
 }
 
-/* mouse over link */
 a:hover {
   color: #143c71;               /* slightly more saturated than #2d4059 */
 }
