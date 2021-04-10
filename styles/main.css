@@ -231,11 +231,11 @@ p a:link {
 
   .topnav input:checked ~ ul {
     width: 450px;
-    height: 400px;
+    height: 350px;
   }
 
   .topnav ul li a {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.5;
   }
 }
