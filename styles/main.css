@@ -63,12 +63,16 @@ p a:link {
 /* Top navigation menu */
 
 .topnav {
-  position: fixed;
+  position: relative;
   top: 20px;
-  right: 20%;
-  min-width: 40px;
-  min-height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
   overflow: hidden;
+  background-color: #e5e5e5;
+  font-family: 'Merriweather Sans', sans-serif;
+  border-radius: 5px;
+  font-size: 0.8rem;
   z-index: 1;
 }
 
@@ -76,31 +80,12 @@ p a:link {
   display: none;
 }
 
-.topnav input:checked ~ label span:first-child {
-  display: none;
-}
-
-.topnav input:not(:checked) ~ label span:last-child {
-  display: none;
-}
-
 .topnav label {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  user-select: none;
-  width: 41px;
-  height: 41px;
-  font-size: 2rem;
-  text-align: center;
-  cursor: pointer;
+  display: none;
 }
 
 .topnav ul {
   overflow: hidden;
-  width: 0;
-  height: 0;
   padding: 0 0 0 10px;
   margin: 0;
   transition: width 0.1s, height 0.1s;
@@ -108,17 +93,15 @@ p a:link {
   text-align: left;
 }
 
-.topnav input:checked ~ ul {
-  width: 150px;
-  height: 120px;
+.topnav ul li {
+  display: inline;
+  padding: 14px 16px;
+  line-height: 2;
 }
 
-.topnav ul li a {
-  font-family: 'Merriweather Sans', sans-serif;
-  display: block;
-  line-height: 30px;
-  margin-right: 50px;
-  transition: color 0.1s, background 0.1s;
+.topnav ul li .right-item {
+  position: absolute;
+  right: 4%;
 }
 
 /* Title box */
@@ -195,6 +178,8 @@ p a:link {
   font-size: 0.8rem;
 }
 
+/* Settings for smaller screens */
+
 @media screen and (max-width: 1028px) {
   .profile {
     width: 80%;
@@ -202,7 +187,7 @@ p a:link {
   }
 
   #profile-picture {
-    width: 50%;
+    width: 40%;
     float: none;
     display: block;
     margin: 0 auto 30px auto;
@@ -215,17 +200,43 @@ p a:link {
 
 @media screen and (max-width: 1028px) {
   .topnav {
-    /* border: 2px solid #e5e5e5; */
+    position: fixed;
     right: 0;
     min-width: 80px;
     min-height: 80px;
+    width: unset;
     background: white;
+    overflow: hidden;
+  }
+
+  .topnav input:checked ~ label span:first-child {
+    display: none;
+  }
+
+  .topnav input:not(:checked) ~ label span:last-child {
+    display: none;
   }
 
   .topnav label {
     width: 81px;
     height: 81px;
-    font-size: 4rem;
+    font-size: 3rem;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    user-select: none;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .topnav ul {
+    width: 0;
+    height: 0;
+  }
+
+  .topnav ul li {
+    display: block;
   }
 
   .topnav input:checked ~ ul {
@@ -236,5 +247,9 @@ p a:link {
   .topnav ul li a {
     font-size: 3rem;
     line-height: 1.5;
+  }
+
+  .topnav ul li .right-item {
+    position: static;
   }
 }
